@@ -1,0 +1,157 @@
+/* Detail Page */
+.detail-page-container {
+    min-height: 100vh;
+}
+
+.detail-page-container.detail-page-dark {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(207, 26%, 17%);
+}
+
+.detail-page {
+    margin-top: 40px;
+}
+
+.detail-page {
+    max-width: 100%;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.country__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.country__info-img {
+    width: 40%;
+}
+
+.country__info-details {
+    width: 50%;
+}
+
+.country__info-img img {
+    width: 100%;
+}
+
+.country__info-detail {
+    display: flex;
+}
+
+.country__info-detail p{
+    margin-bottom: 5px;
+}
+
+.detail-left {
+    width: 50%;
+}
+
+.detail-left-heading {
+    margin-bottom: 25px;
+}
+
+.detail-right {
+    width: 50%;
+}
+
+.border-countries {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.border-button {
+    cursor: pointer;
+}
+
+.border-countries b {
+    margin-right: 5px;
+}
+
+/* Button */
+.button {
+    box-shadow: 0px 0px 6px 4px #f3f3f3;
+    background-color: #fff;
+    font-size: 15px;
+    flex-shrink: 1;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.back-button {
+    margin: 40px 0 30px;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.button.button-dark {
+    background-color: #2B3743;
+    box-shadow: 0px 0px 6px 4px #282727;
+    color: white;
+}
+
+.back-button i {
+    margin-right: 10px;
+}
+
+.border-button {
+    padding: 3px 20px;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+    .detail-page {
+        padding: 0 30px;
+    }
+
+    .country__info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .country__info-img {
+        width: 100%;
+    }
+
+    .country__info-detail {
+        flex-direction: column;
+    }
+
+    .country__info-details {
+        width: 100%;
+    }
+
+    .country__info-detail p {
+        margin-bottom: 7px;
+    }
+
+    .detail-right {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 739px) {
+    .country__info-img {
+        margin-bottom: 25px;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .country__info-img {
+        margin-bottom: 50px;
+    }
+
+    .detail-left-heading {
+        margin-bottom: 50px;
+    }
+}
+
