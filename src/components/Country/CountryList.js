@@ -5,7 +5,9 @@ function CountryList({ countries, search, filter }) {
   return (
     <div className="countries-list">
       {countries
-        .filter((item) => item.name.common.toLowerCase().includes(search))
+        .filter((item) =>
+          item.name.common.toLowerCase().includes(search.toLowerCase().trim())
+        )
         .filter((item) => item.region.includes(filter))
         .map((country, index) => (
           <Country

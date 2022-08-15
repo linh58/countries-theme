@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 import "./Filter.css";
 
-function Search({ search, handleChangeSearch }) {
+function Search({ search, setSearch }) {
   const themeContext = useContext(ThemeContext);
   return (
     <div
@@ -15,7 +15,7 @@ function Search({ search, handleChangeSearch }) {
       <input
         type="text"
         value={search}
-        onChange={(e) => handleChangeSearch(e.target.value)}
+        onChange={(e) => setSearch(e.target.value)}
         placeholder="Search for a country..."
         className={`${themeContext.handleChangeColor(
           themeContext.theme,

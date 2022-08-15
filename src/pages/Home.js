@@ -20,7 +20,7 @@ function Home({ countries }) {
       >
         <Header />
         <div className="filter-country">
-          <Search search={search} handleChangeSearch={setSearch} />
+          <Search search={search} setSearch={setSearch} />
           <Select handleChangeSelect={setFilter} />
         </div>
         <CountryList countries={countries} search={search} filter={filter} />
