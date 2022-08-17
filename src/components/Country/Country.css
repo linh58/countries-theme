@@ -1,7 +1,5 @@
 .country-item {
-    width: 21%;
     background-color: #fff;
-    margin-bottom: 60px;
     border-radius: 5px;
     box-shadow: 0px 0px 6px 4px #f3f3f3;
     color: hsl(200, 15%, 8%);
@@ -44,22 +42,7 @@
 }
 
 @media screen and (max-width: 739px) {
-    .country-item {
-        width: 100%;
-    }
-
     .country-img {
         height: auto;
-    }
-
-}
-
-@media (min-width: 740px) and (max-width: 1023px) {
-    .country-img {
-        height: 200px;
-    }
-
-    .country-item {
-        width: 47%;
     }
 }
